@@ -1,5 +1,5 @@
-# JS-DAW-2022-practicas-Lorenzo
-<!-- Desarrollo Web en Entorno Cliente
+<!-- # JS-DAW-2022-practicas-Lorenzo
+ Desarrollo Web en Entorno Cliente
 
 Editado Lorenzo Navarro Jiménez -->
 
@@ -33,5 +33,6 @@ Aptitudes
 ![Badge plsql](https://img.shields.io/badge/PLSQL-F80000?style=for-the-badge&logo=oracle&logoColor=black)
 
 Contacto
+
 <a href="https://www.linkedin.com/in/lorenzo-navarro-jimenez">![Badge en linkdin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)</a>
 ![Badge en Mail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
