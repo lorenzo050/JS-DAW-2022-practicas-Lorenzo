@@ -4,7 +4,7 @@
 Editado Lorenzo Navarro Jiménez -->
 
 
-<p align="center" ><h1 >Sobre mi , Lorenzo Navarro Jiménez </h1></p>
+# Sobre mi , Lorenzo Navarro Jiménez 
 
 
 
@@ -34,6 +34,9 @@ Aptitudes
 ![Badge java](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![Badge html5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![Badge plsql](https://img.shields.io/badge/PLSQL-F80000?style=for-the-badge&logo=oracle&logoColor=black)
+![Badge c#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+
+![Badge stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username={lorenzo050})
 
 Contacto
 
