@@ -19,6 +19,10 @@ Titulos
 | Valor 1 | Valor 2 |
 | Valor 3 | Valor 4 |
 
-![Imatge 1 - 2cm](playStoreDungeon.png){width=2cm}
+<!-- ![Imatge 1 - 2cm](playStoreDungeon.png){width=2cm} -->
 
 <img src="playStoreDungeon.png" width="200" height="500">
+
+prueba badges
+
+![Badge en Mail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
