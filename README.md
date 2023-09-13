@@ -21,4 +21,4 @@ Titulos
 
 ![Imatge 1 - 2cm](playStoreDungeon.png){width=2cm}
 
-<img src="playStoreDungeon.png" width="700" height="500">
+<img src="playStoreDungeon.png" width="200" height="500">
