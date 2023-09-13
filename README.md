@@ -8,13 +8,15 @@ Editado Lorenzo Navarro Jiménez
 **texto negrita**
 linea abajo
 ---
-lista
+Titulos
 
-* primer elemeto de la lista
-* segundo elemento de la lista
-* Tercer elemento de la lista
+* Grado Medio Sistemas Microinformaticos y Redes
+* Grado Superior Desarrollo Aplicaciones Multiplataforma
+* Grado Superior Desarrollo Aplicaciones Web
 
 | Capçalera 1 | Capçalera 2 |
 |-------------|-------------|
 | Valor 1 | Valor 2 |
 | Valor 3 | Valor 4 |
+
+![Imatge 1 - 2cm](playStoreDungeon.png){ width=2cm }
