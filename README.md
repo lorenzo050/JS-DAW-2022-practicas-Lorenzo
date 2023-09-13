@@ -8,3 +8,8 @@ Editado Lorenzo Navarro Jiménez
 **texto negrita**
 linea abajo
 ---
+lista
+
+* primer elemeto de la lista
+* segundo elemento de la lista
+* Tercer elemento de la lista
