@@ -4,7 +4,7 @@
 Editado Lorenzo Navarro Jiménez -->
 
 
-<p align="center" ><h1 >Sobre mi , Lorenzo Navarro Jiménez </h1>
+<p align="center" ><h1 >Sobre mi , Lorenzo Navarro Jiménez </h1></p>
 
 
 
