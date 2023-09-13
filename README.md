@@ -20,3 +20,5 @@ Titulos
 | Valor 3 | Valor 4 |
 
 ![Imatge 1 - 2cm](playStoreDungeon.png){width=2cm}
+
+<img src="playStoreDungeon.png" width="120" height="120">
