@@ -25,12 +25,10 @@ Proyectos
 </a>
 
 <!-- ![Imatge 1 - 2cm](playStoreDungeon.png){width=2cm} -->
-prueba badges
-
-![Badge en Mail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
+Aptitudes
 
 ![Badge oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=Oracle&logoColor=white)
-
 ![Badge unity](https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white)
 
-
+Contacto
+![Badge en Mail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
