@@ -18,7 +18,7 @@ Titulos
 Proyectos
 
 * Videojuego Dungeon 256 en Play Store Android
-<img src="captura2.png" width="200" height="500">
+<img src="captura2.jpeg" width="200" height="500">
 
 
 <a href="https://play.google.com/store/apps/details?id=com.lnzcreations.Dungeon256">![Badge play store](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)
