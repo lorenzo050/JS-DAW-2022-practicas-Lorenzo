@@ -19,4 +19,4 @@ Titulos
 | Valor 1 | Valor 2 |
 | Valor 3 | Valor 4 |
 
-![Imatge 1 - 2cm](playStoreDungeon.png){ width=2cm }
+![Imatge 1 - 2cm](playStoreDungeon.png){width=2cm}
