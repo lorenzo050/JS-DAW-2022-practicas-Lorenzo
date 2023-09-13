@@ -3,10 +3,9 @@
 
 Editado Lorenzo Navarro Jiménez -->
 
-# Sobre mi , Lorenzo Navarro Jiménez
+<p align="center"> # Sobre mi , Lorenzo Navarro Jiménez </p>
 *Programador y Técnico Informático*
-**texto negrita**
-linea abajo
+
 ---
 Titulos
 
