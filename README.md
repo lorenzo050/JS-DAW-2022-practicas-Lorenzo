@@ -2,9 +2,9 @@
  Desarrollo Web en Entorno Cliente
 
 Editado Lorenzo Navarro Jiménez -->
-<div style="text-align: center;">
+<div >
 
-<h1>Sobre mi , Lorenzo Navarro Jiménez </h1>
+<h1 style="text-align: center;">Sobre mi , Lorenzo Navarro Jiménez </h1>
 
 </div>
 
