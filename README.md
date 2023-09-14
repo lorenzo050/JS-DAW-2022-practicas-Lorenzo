@@ -11,23 +11,23 @@ Editado Lorenzo Navarro Jiménez -->
 *Programador y Técnico Informático* :computer:
 
 ---
-Titulos
+Titulos  :mortar_board:
 
 * Grado Medio Sistemas Microinformaticos y Redes
 * Grado Superior Desarrollo Aplicaciones Multiplataforma
 * Grado Superior Desarrollo Aplicaciones Web
 
 
-Proyectos
+Proyectos :space_invader:
 
-* Videojuego Dungeon 256 en Play Store Android
+* Videojuego Dungeon 256 en Play Store Android :video_game:
 <img src="captura2.jpeg" width="300" height="200">
 
 <a href="https://play.google.com/store/apps/details?id=com.lnzcreations.Dungeon256">![Badge play store](https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white)
 </a>
 
 <!-- ![Imatge 1 - 2cm](playStoreDungeon.png){width=2cm} -->
-Aptitudes
+Aptitudes :floppy_disk:
 
 ![Badge oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=Oracle&logoColor=white)
 ![Badge unity](https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white)
@@ -42,7 +42,7 @@ Aptitudes
 <img src="{https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={lorenzo050}}" /> -->
 
 
-Contacto
+Contacto :mailbox:
 
 <a href="https://www.linkedin.com/in/lorenzo-navarro-jimenez">![Badge en linkdin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)</a>
 
