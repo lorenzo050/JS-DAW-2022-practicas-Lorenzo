@@ -36,7 +36,7 @@ Aptitudes
 ![Badge plsql](https://img.shields.io/badge/PLSQL-F80000?style=for-the-badge&logo=oracle&logoColor=black)
 ![Badge c#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 
-![Badge stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username={lorenzo050})
+![Badge stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username={lorenzo050}&theme={dark})
 
 Contacto
 
