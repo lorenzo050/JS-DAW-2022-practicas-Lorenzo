@@ -38,6 +38,8 @@ Aptitudes
 
 ![Badge stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username={lorenzo050}&theme={dark})
 
+![Badge stats](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={lorenzo050})
+
 Contacto
 
 <a href="https://www.linkedin.com/in/lorenzo-navarro-jimenez">![Badge en linkdin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)</a>
