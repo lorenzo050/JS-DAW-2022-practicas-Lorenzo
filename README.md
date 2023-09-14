@@ -38,7 +38,8 @@ Aptitudes
 
 ![Badge stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username={lorenzo050}&theme={dark})
 
-![Badge stats](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={lorenzo050})
+<img src="{https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={lorenzo050}}" />
+
 
 Contacto
 
