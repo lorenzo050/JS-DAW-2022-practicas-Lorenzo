@@ -8,7 +8,7 @@ Editado Lorenzo Navarro Jiménez -->
 
 
 
-*Programador y Técnico Informático*
+*Programador y Técnico Informático* :computer:
 
 ---
 Titulos
@@ -35,10 +35,11 @@ Aptitudes
 ![Badge html5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![Badge plsql](https://img.shields.io/badge/PLSQL-F80000?style=for-the-badge&logo=oracle&logoColor=black)
 ![Badge c#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![Badge wordpress](https://img.shields.io/badge/Wordpress-21759B?style=for-the-badge&logo=wordpress&logoColor=white)
 
-![Badge stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username={lorenzo050}&theme={dark})
+<!--![Badge stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username={lorenzo050}&theme={dark})
 
-<img src="{https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={lorenzo050}}" />
+<img src="{https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username={lorenzo050}}" /> -->
 
 
 Contacto
