@@ -25,6 +25,10 @@ class AlumnoASIR extends Alumno {
         this.activo = false;
     }
     
+    activar (){
+        this.activo = true;
+    }
+
     añadirCursos(curso){
         this.cursos.push(curso);
         console.log(this.cursos);
@@ -58,5 +62,5 @@ aluDAW.saludo();
 aluDAW.login("loren@mail.com", "1234");
 aluDAW.login("loren@mail.com", "12345");
 
-aluDAW.añadirCursos("Desarrollo");
-aluDAW.añadirCursos("Programacion");
+aluDAW.añadirCursos("Desarrollo2");
+aluDAW.añadirCursos("Programacion2");
