@@ -22,7 +22,7 @@ console.log(persona.profesion);
 //SOLUCION
 let persona1 = {nombre: "NombreInventado", profesion: "Informático DAW"};
 
-let antonioObj1 = Object.assign(persona1);
+let antonioObj1 = Object.assign({},persona1);
 
 antonioObj1.nombre = "Pepito";
 antonioObj1.edad = "55";
