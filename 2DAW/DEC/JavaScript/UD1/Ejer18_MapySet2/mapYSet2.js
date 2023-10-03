@@ -27,5 +27,4 @@ mapAlumno.set("DIW",arrayAluDIW);
 for (const [key, value] of mapAsignatura) {
     console.log(`La asignatura ${key} tiene una duración de ${value}  horas \n
     y tiene los alumnos ` + mapAlumno.get(`${key}.`));
-  
 }
