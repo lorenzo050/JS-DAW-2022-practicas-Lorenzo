@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios sencillos puntuables Lorenzo</title>
+
+    <script></script>
+  </head>
+  <body>
+    <button id="ejer1">Ejercicio 1</button>
+    <button id="ejer2">Ejercicio 2</button>
+    <button id="ejer3">Ejercicio 3</button>
+    <button id="ejer4">Ejercicio 4</button>
+
+    <br />
+    <br />
+    <hr />
+    <div style="border: 0.5rem solid; width: 300px; display: block">
+      <h2 style="margin: 30px">ESCOGE TU COLOR</h2>
+
+      <div style="margin: 50px">
+        <button id="rojo">ROJO</button>
+        <button id="verde">VERDE</button>
+        <button id="azul">AZUL</button>
+      </div>
+    </div>
+    <hr />
+
+    <h2 id="ejer6">ENTRA AQUI</h2>
+
+    <div id="ejer6div">Ejercicio 6</div>
+
+    <hr />
+    <h2 id="ejer7">ENTRA AQUI</h2>
+
+    <div id="ejer7div">Ejercicio 7</div>
+
+    <hr />
+    <h2>EL MAYOR DE LOS 3</h2>
+
+    <form onsubmit="ejercicio8()">
+      <input type="number" id="num1" name="num1" />
+      <br />
+      <input type="number" id="num2" name="num2" />
+      <br />
+      <input type="number" id="num3" name="num3" />
+      <br />
+      <button type="submit">Número mayor</button>
+    </form>
+
+    <script>
+      //1
+      document
+        .getElementById("ejer1")
+        .addEventListener("click", ejercicio1, false);
+
+      function ejercicio1() {
+        nombre = window.prompt("¿Cuál es tu nombre?");
+        alert("Hola " + nombre);
+      }
+
+      //2
+      document
+        .getElementById("ejer2")
+        .addEventListener("click", ejercicio2, false);
+
+      function ejercicio2() {
+        nombre = window.prompt("Introduce una cadena de texto");
+        sumaA = 0;
+        for (let index = 0; index < nombre.length; index++) {
+          if (nombre.substr(index, 1) === "a") {
+            sumaA += 1;
+          }
+        }
+        alert("La cadena tiene un total de " + sumaA + " letras 'a'");
+      }
+
+      //3
+      document
+        .getElementById("ejer3")
+        .addEventListener("click", ejercicio3, false);
+
+      function ejercicio3() {
+        nombre = window.prompt("Introduce una cadena de texto");
+        nombre.toUpperCase();
+        sumaA = 0;
+        for (let index = 0; index < nombre.length; index++) {
+          if (nombre.substr(index, 1) === "A") {
+            sumaA += 1;
+          }
+        }
+        alert("La cadena tiene un total de " + sumaA + " letras 'a'");
+      }
+
+      //4
+      document
+        .getElementById("ejer4")
+        .addEventListener("click", ejercicio4, false);
+
+      function ejercicio4() {
+        nombre = window.prompt("Que color de fondo quieres ?(R or V or A)");
+        if (nombre === "R") {
+          document.bgColor = "#FF0000";
+        } else {
+          if (nombre === "V") {
+            document.bgColor = "#008f39";
+          } else {
+            if (nombre === "A") {
+              document.bgColor = "#0000FF";
+            } else {
+              alert("Introduce una cadena de color valida");
+            }
+          }
+        }
+      }
+
+      //5
+      document.getElementById("rojo").addEventListener("click", rojo, false);
+
+      function rojo() {
+        document.bgColor = "#FF0000";
+      }
+
+      document.getElementById("verde").addEventListener("click", verde, false);
+
+      function verde() {
+        document.bgColor = "#008f39";
+      }
+
+      document.getElementById("azul").addEventListener("click", azul, false);
+
+      function azul() {
+        document.bgColor = "#0000FF";
+      }
+
+      //6
+      document
+        .getElementById("ejer6")
+        .addEventListener("mouseover", ejercicio6, false);
+
+      function ejercicio6() {
+        document.getElementById("ejer6div").style.background = "yellow";
+      }
+
+      //7
+      document
+        .getElementById("ejer7")
+        .addEventListener("mouseover", ejercicio7, false);
+      document
+        .getElementById("ejer7")
+        .addEventListener("mouseleave", ejercicio72, false);
+
+      function ejercicio7() {
+        document.getElementById("ejer7div").style.background = "purple";
+      }
+
+      function ejercicio72() {
+        document.getElementById("ejer7div").style.background = null;
+      }
+
+      //8
+
+      function ejercicio8() {
+        num1 = document.getElementById("num1").value;
+        num2 = document.getElementById("num2").value;
+        num3 = document.getElementById("num3").value;
+        arrayNum = new Array();
+
+        arrayNum.push(num1,num2,num3);
+        numMayor = 0;
+
+        if (num1.length === 0) {
+          alert("Introduce los 3 números");
+        } else {
+          if (num2.length === 0) {
+            alert("Introduce los 3 números");
+          } else {
+            if (num2.length === 0) {
+              alert("Introduce los 3 números");
+            } else {
+                for (let index = 0; index < arrayNum.length; index++) {
+                  if (arrayNum[index] > numMayor) {
+                    numMayor = arrayNum[index];
+                  }
+                }
+                alert("El número mayor es el " +  numMayor);
+            }
+          }
+        }
+
+       // alert(num1);
+      }
+    </script>
+  </body>
+</html>
