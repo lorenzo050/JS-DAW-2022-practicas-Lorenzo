@@ -1,71 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formularios objetos nativos</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <form onsubmit="">
-        <label for="cad">Introduce una cadena de texto: </label>
-        <input type="text" id="cad" name="cad" />
-        <br />
-        <p></p>
-   
-        <label for="cadInver">A LA INVERSA :</label>
-        <input type="text" id="cadInver" name="cadInver" disabled />
-        <br>
-        <label for="cadMayus">EN MAYUSCULAS :</label>
-        <input type="text" id="cadMayus" name="cadMayus" disabled/>
-        <br>
-        <label for="cadRep">REPETIDA :</label>
-        <input type="text" id="cadRep" name="cadRep" disabled/>
-        <br>
-        <label for="cadRep">INVERTIDA EN MAYUSCULAS :</label>
-        <input type="text" id="cadInverMayus" name="cadInverMayus" disabled/>
-      </form>
-      <button onclick="ejercicio1()">Convierte la cadena</button>
+      <label for="cad">Introduce una cadena de texto: </label>
+      <input type="text" id="cad" name="cad" />
+      <br />
+      <p></p>
 
-      <!-- EJERCICIO 2-->
-      <hr>
-      <button onclick="ejercicio2()">Ejercicio 2 día nacimiento</button>
+      <label for="cadInver">A LA INVERSA :</label>
+      <input type="text" id="cadInver" name="cadInver" disabled />
+      <br />
+      <label for="cadMayus">EN MAYUSCULAS :</label>
+      <input type="text" id="cadMayus" name="cadMayus" disabled />
+      <br />
+      <label for="cadRep">REPETIDA :</label>
+      <input type="text" id="cadRep" name="cadRep" disabled />
+      <br />
+      <label for="cadRep">INVERTIDA EN MAYUSCULAS :</label>
+      <input type="text" id="cadInverMayus" name="cadInverMayus" disabled />
+    </form>
+    <button onclick="ejercicio1()">Convierte la cadena</button>
 
+    <!-- EJERCICIO 2-->
+    <hr />
+    <button onclick="ejercicio2()">Ejercicio 2 día nacimiento</button>
 
-<script>
-//ejercicio 1
+    <script>
+      //ejercicio 1
 
-function ejercicio1(){
-var cadena = document.getElementById("cad").value;
+      function ejercicio1() {
+        var cadena = document.getElementById("cad").value;
 
-//invertida
-cadInver = "";
-for (let index = 0; index < cadena.length; index++) {
-    cadInver =   cadena.substring(index,index + 1) + cadInver ;  
-}
-document.getElementById("cadInver").value = cadInver;
+        //invertida
+        cadInver = "";
+        for (let index = 0; index < cadena.length; index++) {
+          cadInver = cadena.substring(index, index + 1) + cadInver;
+        }
+        document.getElementById("cadInver").value = cadInver;
 
-//mayusculas
+        //mayusculas
 
-document.getElementById("cadMayus").value = cadena.toUpperCase();
+        document.getElementById("cadMayus").value = cadena.toUpperCase();
 
-//repetida
-document.getElementById("cadRep").value = cadena + cadena + cadena;
+        //repetida
+        document.getElementById("cadRep").value = cadena + cadena + cadena;
 
-//invertida mayus
-document.getElementById("cadInverMayus").value = cadInver.toUpperCase();
-}
+        //invertida mayus
+        document.getElementById("cadInverMayus").value = cadInver.toUpperCase();
+      }
 
-function ejercicio2(){
-     var fecha = window.prompt('¿Qué día naciste? YYYY/MM/DD')
-     var fechaDate = new Date(fecha);
-     var fechaNow = new Date();
-     var diferencia = (fechaNow.getTime() - fechaDate.getTime()) / 1000 / 60 / 60 / 24;
-     alert(Math.round("Han transcurrido " + diferencia + 'días, aproximadamente , desde que naciste.'));
-}
-
-
-</script>
-
-</body>
+      function ejercicio2() {
+        var fecha = window.prompt("¿Qué día naciste? YYYY/MM/DD");
+        var fechaDate = new Date(fecha);
+        var fechaNow = new Date();
+        var diferencia =
+          (fechaNow.getTime() - fechaDate.getTime()) / 1000 / 60 / 60 / 24;
+        alert(
+          Math.round(
+            "Han transcurrido " +
+              diferencia +
+              "días, aproximadamente , desde que naciste."
+          )
+        );
+      }
+    </script>
+  </body>
 </html>
