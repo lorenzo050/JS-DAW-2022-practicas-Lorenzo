@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrastre de una capa en otra</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text/plain", ev.target.id);
+            ev.target.style.opacity = "0.5";
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text/plain");
+            var draggedElement = document.getElementById(data);
+            var dropTarget = ev.target;
+
+            if (draggedElement.id === "capa1" && dropTarget.id === "capa2") {
+                draggedElement.style.display = "none";
+                dropTarget.innerHTML = "LO HAS LOGRADO";
+                dropTarget.style.backgroundColor = "red";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="capa1" style="background-color: yellow" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)">SOY ARRASTRABLE</div>
+    <div id="capa2" ondrop="drop(event)" ondragover="allowDrop(event)">SOY EL DESTINO</div>
+</body>
+</html>
