@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario gestion eventos</title>
+  </head>
+  <body>
+    <div style="margin: 0 auto;  width: 800px;">
+      <form action="">
+        <h1>Formulario eventos</h1>
+        <label for="mail"> Mail (xxx@yyyy.zzzz)</label>
+        <input type="text" id="mail" name="mail" />
+<br>
+<br>
+        <label for="passwd"> password de 8 a 10</label>
+        <input type="text" id="passwd" name="passwd" />
+<br><br>
+        <button id="btnEnviar" disabled>Enviar</button>
+      </form>
+    </div>
+
+    <script>
+      const textmail = document.getElementById("mail");
+      const btn = document.getElementById("btnEnviar");
+      textmail.addEventListener("blur", (event) => {
+        var mail = textmail.value;
+        if (
+          mail.indexOf("@") != -1 &&
+          mail.indexOf(".") != -1 &&
+          mail.indexOf("@") < mail.indexOf(".")
+        ) {
+          alert("correo correcto");
+          btn.disabled = false;
+        } else {
+          alert("correo no correcto (xxx@yyyy.zzzz)");
+          event.target.style.background = "red";
+          btn.disabled = true;
+        }
+      });
+
+      const pwd = document.getElementById("passwd");
+      pwd.addEventListener("blur", (event) => {
+        var pwdCad = pwd.value;
+        if (pwdCad.length > 8) {
+          alert("pwd correcto");
+          btn.disabled = false;
+        } else {
+          alert("pwd no correcto > 8");
+          event.target.style.background = "red";
+          btn.disabled = true;
+        }
+      });
+    </script>
+  </body>
+</html>
