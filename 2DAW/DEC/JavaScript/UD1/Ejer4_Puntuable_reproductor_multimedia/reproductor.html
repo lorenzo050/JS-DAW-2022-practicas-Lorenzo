@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reproductor de música</title>
+    <meta name="author" content="Lorenzo" />
+    <script type="text/javascript">
+      var lista = [
+        "dua_lipa_new_rules.mp3",
+        "olivia_rodrigo_vampire.mp3",
+        "https://manzdev.github.io/codevember2017/assets/eye-tiger.mp3",
+      ];
+
+      var portada = [
+        "./img/portada1.jpg",
+        "./img/portada2.jpg",
+        "./img/portada3.jpg",
+      ];
+
+      /*   const audio = new Audio(
+        "https://manzdev.github.io/codevember2017/assets/eye-tiger.mp3"
+      );
+*/
+      random = Math.floor(Math.random() * 3);
+      console.log(random);
+      audio = new Audio(lista[random]);
+
+      function reproducir() {
+        audio.volume = 0.5; // Volumen al 50%
+        audio.play();
+        document.getElementById("nombreCancion").innerHTML = lista[random];
+        document.getElementById("portada").setAttribute("src", portada[random]);
+      }
+
+      function pausar() {
+        audio.pause();
+        console.log("Ha pausado el sonido");
+      }
+
+      function randomSong() {
+        audio.pause();
+        cpRandom = random;
+        random = Math.floor(Math.random() * 3);
+        while (random === cpRandom) {
+          random = Math.floor(Math.random() * 3);
+        }
+        audio = new Audio(lista[random]);
+        reproducir();
+      }
+    </script>
+  </head>
+  <body>
+    <div style="text-align: center; display: block;">
+      <h1>Reproductor de música</h1>
+      <div style="background-color: #e7dede; border-radius: 25px; width: 300px; margin: 0 auto;">
+        <img id="portada" src="" alt="" style="width: 300px" />
+        <p id="nombreCancion">Utiliza los botones para reproducir la música</p>
+
+        <button onclick="reproducir()">
+          <img src="icono_reproducir.png" alt="" style="width: 30px" />
+        </button>
+        <button onclick="pausar()">
+          <img src="icono_pause.png" alt="" style="width: 30px" />
+        </button>
+        <button onclick="randomSong()">
+          <img src="icono_random.png" alt="" style="width: 30px" />
+        </button>
+      </div>
+      
+        <ul style="background-color: #e7dede; border-radius: 25px; width: 300px;margin: 0 auto;">
+          <h3>Opciones</h3>
+          <li>
+            <img src="icono_reproducir.png" alt="" style="width: 15px" />
+            Reproducir música
+          </li>
+          <li>
+            <img src="icono_pause.png" alt="" style="width: 15px" /> Pausar
+            música
+          </li>
+          <li>
+            <img src="icono_random.png" alt="" style="width: 15px" /> Música
+            aleatoria (Solo hay 3 canciones , para añadir otra con poner la ruta
+            en el array y modificar el random sirve)
+          </li>
+        </ul>
+      
+    </div>
+  </body>
+</html>
