@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Si no</title>
+
+    
+
+  </head>
+
+  <body>
+    <button id="btn">Yes or No</button>
+
+    <img id="img" src="" alt="" style="width: 700px;" />
+    <p id="p"></p>
+
+  
+
+    <script>
+        const btn = document.getElementById("btn");
+  
+        btn.addEventListener("click", () => {
+          fetch("https://yesno.wtf/api")
+            .then((response) => response.json())
+            .then((json) => {
+              const img = document.getElementById("img");
+              img.src = json.image;
+              const p = document.getElementById("p");
+              p.textContent = json.answer;
+            });
+        });
+      </script>
+  </body>
+</html>
