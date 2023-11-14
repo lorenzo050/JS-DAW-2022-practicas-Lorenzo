@@ -1,0 +1,112 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  background-image: url(https://tkdfinestrat.com/wp-content/uploads/2020/06/cecheste.jpg);
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.header-right {
+  float: right;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.curso {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 50px;
+/*  border-style: solid;
+  width: 300px; */
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.gva {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gva:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.div2 {
+  margin: 150px;
+  background: rgb(195, 208, 211);
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 25px;
+  padding: 15px;
+  
+}
+
+div div a {
+  margin-left: 30px;
+  color: black !important;
+  padding: 15px;
+  background-color: white ;
+  border-radius: 15px;
+  
+}
+
+.titulo{
+  background: rgb(195, 208, 211);
+  margin: 150px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 25px;
+  padding: 15px;
+}

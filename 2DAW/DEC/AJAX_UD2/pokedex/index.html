@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+
+    <script>
+      fetch("https://pokeapi.co/api/v2/pokemon/?limit=1292&offset=0")
+        .then((response) => response.json())
+        .then((json) => {
+          //       const cont = document.getElementById("contador");
+          //          cont.textContent = json.count;*/
+
+          /*    const resultados = document.getElementById("lista");
+             resultados.textContent = json.results[4].name; */
+
+          for (let index = 0; index < 100; index++) {
+            const contenido = document.getElementById("contenido");
+            var newP = document.createElement("tr");
+            newP.textContent = json.results[index].name;
+            newP.id = index;
+            contenido.appendChild(newP);
+
+      //      document.body.insertBefore(newP, contenido);
+
+            fetch(json.results[index].url)
+              .then((response) => response.json())
+              .then((json) => {
+                const separados = document.getElementById(index);
+
+                var newImg3 = document.createElement("img");
+                newImg3.src = json.sprites.front_default;
+                separados.appendChild(newImg3);
+
+                var newImg = document.createElement("img");
+                newImg.src = json.sprites.front_shiny;
+                separados.appendChild(newImg);
+
+               
+
+                var newP2 = document.createElement("span");
+                newP2.textContent = "habilidad: "+  json.abilities[0].ability.name;
+                separados.appendChild(newP2);
+
+             //   document.body.insertBefore(newImg, newP);
+              }); 
+
+          }
+
+  /*        const contenido = document.getElementById("contenido");
+          var newP = document.createElement("p");
+          //   newP.appendChild(json.results[4].name);
+          newP.textContent = json.results[4].name;
+          document.body.insertBefore(newP, contenido);
+          /*  const p = document.getElementById("p");
+              p.textContent = json.answer; */
+
+              
+        });
+
+    </script>
+  </head>
+  <body>
+    <p id="contador"></p>
+
+    <p id="lista"></p>
+
+    <table id="contenido">
+        
+    </table>
+  </body>
+</html>
