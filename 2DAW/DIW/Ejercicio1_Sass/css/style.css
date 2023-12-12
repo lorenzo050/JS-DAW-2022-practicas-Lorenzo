@@ -1,0 +1,30 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#botones {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px;
+}
+#botones button {
+  background-color: #3498db;
+}
+#botones button:hover {
+  background-color: pink;
+}
+#botones button:nth-child(2) {
+  background-color: #ff0000;
+}
+#botones button:last-child {
+  background-color: #6c705f;
+}/*# sourceMappingURL=style.css.map */

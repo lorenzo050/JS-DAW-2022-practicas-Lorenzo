@@ -1,0 +1,30 @@
+$colorBoton1: #3498db !default
+$colorBoton2: #ff0000
+$colorBoton3: #6c705f
+
+$listaDeColores: $colorBoton1, $colorBoton2, $colorBoton3
+
+html, body
+    height: 100%
+    margin: 0
+
+.contenedor
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 100vh
+
+#botones
+    display: flex
+    justify-content: space-between
+    padding: calc(60px + 10px)
+
+    button
+        background-color: nth($listaDeColores, index($listaDeColores, $colorBoton1))
+        &:hover
+            background-color: pink
+        &:nth-child(2)
+            background-color: nth($listaDeColores, index($listaDeColores, $colorBoton2))
+        &:last-child
+            background-color: nth($listaDeColores, index($listaDeColores, $colorBoton3))
