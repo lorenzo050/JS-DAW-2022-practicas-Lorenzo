@@ -4,6 +4,8 @@ $colorBoton3: #6c705f
 
 $listaDeColores: $colorBoton1, $colorBoton2, $colorBoton3
 
+$colores: (boton1: #3498db,boton2: #ff0000,boton3: #6c705f)
+
 html, body
     height: 100%
     margin: 0
@@ -21,7 +23,8 @@ html, body
     padding: calc(60px + 10px)
 
     button
-        background-color: nth($listaDeColores, index($listaDeColores, $colorBoton1))
+        $boton: boton1
+        background-color: map-get($colores, $boton)
         &:hover
             background-color: pink
         &:nth-child(2)
