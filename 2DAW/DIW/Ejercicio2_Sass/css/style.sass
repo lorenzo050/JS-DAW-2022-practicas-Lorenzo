@@ -1,0 +1,47 @@
+$small-screen: 100px !default
+$large-screen: 800px !default
+$xlarge-screen: 1000px !default
+
+$footer-background-color: null !default
+
+=respond-to($breakpoint)
+  @media only screen and (min-width: $breakpoint)
+    @content
+
+footer 
+  background-color: $footer-background-color
+
+  +respond-to($small-screen)
+    background-color: red
+
+
+  +respond-to($large-screen)
+     background-color: orange
+
+  
+  +respond-to($xlarge-screen)
+     background-color: green
+
+
+$i: 1
+$base-color: #db3434 // Color base, puedes ajustarlo según tus preferencias
+
+@while $i <= 4
+  h#{$i}
+    background-color: darken($base-color, 5% * $i)
+
+  $i: $i + 1
+
+
+$base-color2: #eb7474
+
+@for $i from 1 through 4
+  $header-color: darken($base-color2, 5% * $i)
+  $text-color: lighten($base-color2, 10% * $i)
+
+  h#{$i}
+    color: $text-color
+
+
+
+
