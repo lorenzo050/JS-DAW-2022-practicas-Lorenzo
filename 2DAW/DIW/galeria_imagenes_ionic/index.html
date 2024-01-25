@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Gallery!</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@4.9.1/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@4.9.1/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@4.9.1/css/ionic.bundle.css" />
+    <script src="gallery.js"></script>
+  </head>
+  <body onload="onLoad()">
+    <ion-app>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title color="warning">Gallery!</ion-title>
+          <ion-buttons slot="primary">
+            <ion-button onclick="play()">
+              <ion-icon slot="icon-only" name="play"></ion-icon>
+            </ion-button>
+            <ion-button onclick="pause()">
+              <ion-icon slot="icon-only" name="pause"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <ion-toolbar>
+          <ion-item>
+            <ion-range min="0" max="5000" value="4000"></ion-range>
+            <ion-icon slot="start" size="small" name="speedometer"></ion-icon>
+            <ion-icon slot="end" name="speedometer"></ion-icon>
+          </ion-item>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-tabs>
+          <ion-tab tab="valencia">
+            <ion-slides id="valencia">
+              <ion-slide><img src="img/valencia1.jpg" /></ion-slide>
+              <ion-slide><img src="img/valencia2.jpg" /></ion-slide>
+              <ion-slide><img src="img/valencia3.jpg" /></ion-slide>
+            </ion-slides>
+          </ion-tab>
+          <ion-tab tab="real-madrid">
+            <ion-slides id="real-madrid">
+              <ion-slide><img src="img/real-madrid1.jpg" /></ion-slide>
+              <ion-slide><img src="img/real-madrid2.jpg" /></ion-slide>
+              <ion-slide><img src="img/real-madrid3.jpg" /></ion-slide>
+            </ion-slides>
+          </ion-tab>
+          <ion-tab tab="psg">
+            <ion-slides id="psg">
+              <ion-slide><img src="img/psg1.jpg" /></ion-slide>
+              <ion-slide><img src="img/psg2.jpg" /></ion-slide>
+              <ion-slide><img src="img/psg3.jpg" /></ion-slide>
+            </ion-slides>
+          </ion-tab>
+        </ion-tabs>
+      </ion-content>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="valencia">
+          <ion-icon name="football"></ion-icon>
+          <ion-label>ValenciaCF</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="real-madrid">
+          <ion-icon name="football"></ion-icon>
+          <ion-label>Real Madrid</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="psg">
+          <ion-icon name="football"></ion-icon>
+          <ion-label>PSG</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-app>
+  </body>
+</html>
